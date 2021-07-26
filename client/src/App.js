@@ -1,9 +1,11 @@
 import './App.css';
 import React from 'react';
+import ProtectedRoute from './components/ProtectedRoute';
 import News from './components/News';
 import NavBar from './components/NavBar';
 import Signup from './components/Signup';
-import {Route} from 'react-router-dom';
+import Login from './components/Login';
+import {Route, Redirect} from 'react-router-dom';
 import NewsDetails from './components/NewsDetails';
 
 class App extends React.Component {
@@ -25,12 +27,18 @@ class App extends React.Component {
     return (
       <div className="App">
   
-        <NavBar/>
+        <NavBar user={this.state.user} setUser={this.setUser}/>
+
+        <ProtectedRoute
+          exact path='/news'
+          user={this.state.user}
+          component={News}
+        />
   
-        <Route 
+       {/*  <Route 
         exact path='/news'
         component={News}
-        />
+        /> */}
   
         <Route 
         exact path='/news/:id'
@@ -42,6 +50,11 @@ class App extends React.Component {
         //component={News}
         render={props => <Signup setUser={this.setUser} {...props} />}
         />  
+
+          <Route
+          exact path='/login'
+          render={props => <Login setUser={this.setUser} {...props} />}
+        />
 
   
   
