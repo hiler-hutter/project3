@@ -11,6 +11,7 @@ router.get('/', (req, res, next) => {
     })
 });
 
+
 router.get('/:id', (req, res, next) => {
   New.findById(req.params.id)
     .then(New => {
@@ -61,6 +62,8 @@ router.delete('/:id', (req, res, next) => {
       next(err);
     })
 });
+
+
 
 
 module.exports = router;

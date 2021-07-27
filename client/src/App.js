@@ -7,6 +7,7 @@ import Signup from './components/Signup';
 import Login from './components/Login';
 import {Route, Redirect} from 'react-router-dom';
 import NewsDetails from './components/NewsDetails';
+import Profile from './components/Profile';
 
 class App extends React.Component {
 
@@ -54,6 +55,11 @@ class App extends React.Component {
           <Route
           exact path='/login'
           render={props => <Login setUser={this.setUser} {...props} />}
+        />
+
+          <Route
+          exact path='/profile'
+          render={props => <Profile setUser={this.setUser} {...props} />}
         />
 
   

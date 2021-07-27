@@ -28,6 +28,255 @@
   color: #61dafb;
 }
 
+.nav-bar{
+  background: rgb(25,33,41);
+  padding-top: 14px;
+  padding-bottom: 14px;
+  color: #fff;
+  height: 40px;
+
+
+}
+.nav-bar a{
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+} 
+.nav-bar ul {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+.nav-bar ul li {
+  float: left;
+  list-style-type: none;
+  text-align: center;
+  width: 25%;
+}
+
+.form-signup{
+  width: 400px;
+  height: 300px;
+  background-color: rgb(115, 132, 152);
+  padding: 30px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 4px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+.form-signup label{
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.h2-sign{
+  margin-top: 70px;
+}
+.controls{
+  width: 150px;
+  background-color: rgb(243, 243, 21);
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #61dafb;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin-top: 40px;
+
+}
+
+.but-signup{
+  width: 80px;
+  height: 40px;
+  background-color: rgb(128, 128, 238);
+  font-size: 20px;
+  margin-left: 70px;
+  margin-top: 20px;
+  color: white;
+
+}
+
+.add-news{
+  width: 500px;
+  height: 600px;
+  background-color: rgb(115, 132, 152);
+  padding: 30px;
+  margin: 0;
+  margin-top: 50px;
+  border-radius: 4px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+  float: left;
+  margin-left: 15px;
+
+}
+
+.but-addN{
+  width: 130px;
+  height: 40px;
+  background-color: rgb(128, 128, 238);
+  font-size: 16px;
+  margin-left: 20px;
+  margin-top: 20px;
+  color: white;
+
+}
+
+.descrip-inp{
+  width: 470px;
+  height: 370px;
+  text-align: center;
+  font-size: 1.6em;
+  font-weight: 600;
+
+}
+
+.controls-add{
+  width: 150px;
+  background-color: rgb(243, 243, 21);
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #61dafb;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin-top: 5px;
+
+}
+
+.edit-news{
+  width: 60%;
+  height: 400px;
+  background-color: rgb(205, 221, 210);
+  padding: 30px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 4px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+
+}
+
+.controls-edit{
+  width: 150px;
+  background-color: rgb(243, 243, 21);
+  padding: 1px;
+  border-radius: 4px;
+  margin-bottom: 2px;
+  border: 1px solid #61dafb;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin-top: 5px;
+
+}
+
+#contenedor{
+  display: inline-block;
+  min-width: 100%;
+}
+
+#description{
+  background-color: rgb(174, 144, 144);
+  width: 100%;
+  height: 260px;
+  color: black;
+  font-size: 1.2em;
+
+}
+
+
+/* .edit-inp{
+  width: 450px;
+  height: 265px;
+  text-align: justify;
+  font-size: 1.6em;
+  font-weight: 600;
+
+} */
+
+.but-editN{
+  width: 170px;
+  height: 25px;
+  background-color: rgb(37, 37, 41);
+  font-size: 16px;
+  margin-left: 20px;
+  margin-top: 5px;
+  color: white;
+
+}
+
+.button-delete {
+  background-color: rgb(176, 50, 50); 
+  border: none;
+  color: rgb(12, 8, 8);
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  top: 100px;
+  right: 150px;
+}
+
+.button-edit {
+  background-color: rgb(49, 32, 147); 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  top: 100px;
+  left: 150px;
+}
+
+.details-news{
+  width: 60%;
+  margin: auto;
+  text-align: justify;
+  margin-top: 25px;
+  background-color: rgb(154, 186, 184);
+  padding: 15px;
+
+}
+
+
+.card-divI{
+  width: 300px;
+  height: 200px;
+  display: inline-block;
+  border: 1px solid black;
+  margin-left: 50px;
+  margin-top: 25px;
+  background-color: rgb(154, 115, 88);
+}
+
+.h3-newsL{
+  text-decoration: none;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.h3-newsL li a{
+  text-decoration: none;
+}
+
+.logo{
+  padding-top: 5px;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

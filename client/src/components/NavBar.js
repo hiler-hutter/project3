@@ -15,7 +15,7 @@ export default function Navbar(props) {
 	}
 
 	return (
-		<nav>
+		<nav className="nav-bar">
 			<ul>
 				<li>
 					<Link to='/'>Home</Link>
@@ -25,6 +25,10 @@ export default function Navbar(props) {
 						<li>
 							<Link to='/news'>News</Link>
 						</li>
+						<li>
+							<Link to='/profile'>profile</Link>
+						</li>
+						
 						<li>
 							<Link to='/' onClick={() => handleLogout()}>Logout</Link>
 						</li>
@@ -38,6 +42,7 @@ export default function Navbar(props) {
 							<Link to='/login'>Login</Link>
 						</li>
 					</>
+					
 				)}
 			</ul>
 		</nav>

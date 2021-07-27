@@ -6,46 +6,58 @@ export default class EditNews extends Component {
 
         return(
 
-            <div>
+            <div className="edit-news">
 
-                <h1>Edit this News</h1>
+                <h3>Edit this News</h3>
 
                 <form onSubmit={this.props.handleSubmit}>
 
                     <label htmlFor="title">Title: </label>
 
-                    <input
+                    <input className="controls-edit"
 
                         id="title"
                         type="text"
                         name="title"
                         value={this.props.title}
                         onChange={this.props.handleChange}
-                    />
+                    /><br></br>
 
-                    <label htmlFor="description">News: </label>
+                    <label htmlFor="author">Author: </label>
 
-                    <input
+                    <input className="controls-edit"
 
+                    id="author"
+                    type="text"
+                    name="author"
+                    value={this.props.author}
+                    onChange={this.props.handleChange}
+                    /><br></br>
+
+                
+                    <label htmlFor="description"></label>
+                    <div id="contenedor">
+                    <input className="edit-inp"
+                    contentEditable="true"
                     id="description"
                     type="text"
                     name="description"
                     value={this.props.description}
                     onChange={this.props.handleChange}
-                    />
+                    /></div><br></br>
 
-                    <label htmlFor="author">Author: </label>
+                   {/*  <div id="contenedor">
+                        <div id="description"
+                            type="text"
+                            name="description"
+                            value={this.props.description}
+                            onChange={this.props.handleChange}
+                            contenteditable="true">
 
-                    <input
-
-                        id="author"
-                        type="text"
-                        name="author"
-                        value={this.props.author}
-                        onChange={this.props.handleChange}
-                    />
-
-                    <button type="submit">Update this project</button>
+                        </div>
+                    </div> */}
+                
+                    <button type="submit" className="but-editN">Update this News</button>
                 </form>
 
             </div>

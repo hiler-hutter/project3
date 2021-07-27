@@ -26,6 +26,8 @@ export default class Projects extends Component {
 	}
 
 	render() {
+       
+        
 		return (
 			<div className="all-news">
                 <AddNews getData={this.getData}/>

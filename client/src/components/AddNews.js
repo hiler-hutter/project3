@@ -5,8 +5,8 @@ export default class AddNews extends Component{
 
     state = {
         title:'',
-        description:'',
         author:'',
+        description:''
     }
 
     handleSubmit = event => {
@@ -14,14 +14,14 @@ export default class AddNews extends Component{
         //make a post request to the server
         axios.post('/api/news', {
             title: this.state.title,
+            author: this.state.author,
             description: this.state.description,
-            author: this.state.description
         })
         .then(() => {
             this.setState({
                 title: '',
-                description: '',
-                author: ''
+                author: '',
+                description: ''
             })
             //trigger getData() in News.js to retrieve the current list of news from the server
             this.props.getData();
@@ -38,47 +38,50 @@ export default class AddNews extends Component{
 
     render(){
         return(
-            <div>
-
+            <div className="add-news">
+                <h3>Willing to write a very interesting news</h3>
                 <form onSubmit={this.handleSubmit}>
 
-                    <label htmlFor="title">title</label>
+                    <label htmlFor="title"></label>
 
-                    <input
+                    <input className="controls-add"
 
                         type="text"
                         id="title"
                         name="title"
+                        placeholder="Title"
                         value={this.state.title}
                         onChange={this.handleChange}
 
-                    />
+                    /><br></br>
 
-                    <label htmlFor="description">description</label>
+                    <label htmlFor="author"></label>
 
-                    <input
-
-                        type="text"
-                        id="description"
-                        name="description"
-                        value={this.state.description}
-                        onChange={this.handleChange}
-
-                    />
-
-                    <label htmlFor="author">author</label>
-
-                    <input
+                    <input className="controls-add"
 
                         type="text"
                         id="author"
                         name="author"
+                        placeholder="Author"
                         value={this.state.author}
                         onChange={this.handleChange}
 
-                    />
+                    /><br></br>
 
-                    <button type="submit">Add this News</button>
+                    <label htmlFor="description"></label>
+
+                    <input className="descrip-inp"
+
+                    type="text"
+                    id="description"
+                    name="description"
+                    placeholder="News Content"
+                    value={this.state.description}
+                    onChange={this.handleChange}
+
+                    /><br></br>
+
+                    <button type="submit" className="but-addN">Add this News</button>
 
                 </form>
      

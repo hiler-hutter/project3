@@ -10,6 +10,8 @@ export default class NewsDetails extends Component {
 
         title: '',
 
+        author: '',
+
         description: '',
 
         error: null,
@@ -30,6 +32,8 @@ export default class NewsDetails extends Component {
                 news: response.data,
 
                 title: response.data.title,
+
+                author: response.data.author,
 
                 description: response.data.description,
             })
@@ -113,11 +117,19 @@ export default class NewsDetails extends Component {
         if(!this.state.news) return <></>
 
 		return (
-			<>
-                <h1>Title: {this.state.news.title}</h1>  
-                <h1>Description: {this.state.news.description}</h1>
-                <button onClick={this.deleteNews}>Delete this News</button>  
-                <button onClick={this.toggleEditForm}>Show Edit form</button>
+
+		
+            <div>
+                <div className="details-news">
+                
+                    <h2>Title: {this.state.news.title}</h2>  
+                    <h2>Author: {this.state.news.author}</h2>  
+                    <h2>Description: {this.state.news.description}</h2>
+
+                </div> 
+               
+                <button onClick={this.deleteNews} className="button-delete">Delete this News</button><br></br>  
+                <button onClick={this.toggleEditForm} className="button-edit">Show Edit form</button>
                 {this.state.editForm && (
 					<EditNews
 						//title={this.state.title}
@@ -128,7 +140,8 @@ export default class NewsDetails extends Component {
 					/>
 				)}
 
-            </>
+                
+            </div>
 		)
 	}
 }
