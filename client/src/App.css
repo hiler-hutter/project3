@@ -34,6 +34,7 @@
   padding-bottom: 14px;
   color: #fff;
   height: 40px;
+  height: 80px;
 
 
 }
@@ -274,6 +275,28 @@
 
 .logo{
   padding-top: 5px;
+}
+
+.heading {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+.buscador {
+  margin-top: 10px;
+  margin-bottom: 2rem;
+  text-align: left;
+
+}
+.btn-block {
+  width: 100%;
+}
+
+.nav-wrapper{
+  margin-top: 10px;
 }
 
 

@@ -1,5 +1,5 @@
 import './App.css';
-import React from 'react';
+//import React from 'react';
 import ProtectedRoute from './components/ProtectedRoute';
 import News from './components/News';
 import NavBar from './components/NavBar';
@@ -8,6 +8,13 @@ import Login from './components/Login';
 import {Route, Redirect} from 'react-router-dom';
 import NewsDetails from './components/NewsDetails';
 import Profile from './components/Profile';
+//import components from api app.js
+
+import React, { Fragment } from 'react';
+import Header from './components/newsApi/Header';
+import Formulario from './components/newsApi/Formulario';
+import ListadoNoticias from './components/newsApi/ListadoNoticias';
+import ApiData from './components/newsApi/ApiData'
 
 class App extends React.Component {
 
@@ -22,6 +29,7 @@ class App extends React.Component {
       user: user
     })
   }
+
 
   render() {
 
@@ -59,10 +67,16 @@ class App extends React.Component {
 
           <Route
           exact path='/profile'
-          render={props => <Profile setUser={this.setUser} {...props} />}
+          render={props => <Profile user={this.state.user} setUser={this.setUser} {...props} />}
         />
 
-  
+          <Route
+          exact path='/'
+          render={props => <ApiData setUser={this.setUser} {...props} />}
+        />
+
+
+    
   
       </div>
     );

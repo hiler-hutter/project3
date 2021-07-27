@@ -5,6 +5,8 @@ import App from './App';
 import {BrowserRouter} from 'react-router-dom'
 import reportWebVitals from './reportWebVitals';
 import axios from 'axios';
+import * as serviceWorker from './serviceWorker';
+
 
 //get the logged in user
 
@@ -28,3 +30,5 @@ axios.get('/api/auth/loggedin')
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+serviceWorker.unregister();
+

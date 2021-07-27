@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 import NewList from './NewList';
-import AddNews from './AddNews'
 
-export default class Projects extends Component {
+export default class Profile extends Component {
 
 	state = {
 		news: []
@@ -27,11 +26,17 @@ export default class Projects extends Component {
 
 	render() {
        
-        
+        const myNews = this.state.news.filter(el => {
+			return el.author === this.props.user.username
+
+		  })
+		  console.log(myNews)
+		  console.log(this.props.user.username)
 		return (
 			<div className="all-news">
-                <AddNews getData={this.getData}/>
+    
                 <NewList news={this.state.news} />
+				
             </div>
 		)
 	}
