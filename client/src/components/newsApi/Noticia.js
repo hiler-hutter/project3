@@ -21,7 +21,10 @@ const Noticia = ({noticia, user}) => {
         axios.post('/api/news', {
 			title,
 			description,
-            author:user.username
+            author:user.username,
+            link:url
+            
+
 		})
 			.then(response => {
                 console.log(response)

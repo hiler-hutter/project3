@@ -16,6 +16,7 @@ export default class AddNews extends Component{
             title: this.state.title,
             author: this.state.author,
             description: this.state.description,
+            link:'N/A'
         })
         .then(() => {
             this.setState({

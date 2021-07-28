@@ -27,11 +27,12 @@ router.get('/:id', (req, res, next) => {
 });
 
 router.post("/", (req, res, next) => {
-  const {title, description, author} = req.body;
+  const {title, description, author, link} = req.body;
   New.create({
     title,
     description,
-    author
+    author,
+    link
   })
   .then(news => {
     res.status(201).json(news);

@@ -12,8 +12,7 @@ export default function NewList(props){
             {props.news.length > 0 && <h2>These are all the saved News:</h2>}
 
             {props.news.map(news => {
-
-                return(
+                return  news.link === 'N/A' ? (
                     <div key={news._id} className="card-divI">
                         <div>
                             <img src={IMG} alt={''} width="395" height="350" className="logo"/>
@@ -26,14 +25,33 @@ export default function NewList(props){
                                 <h5 className="h3-newsL">Author: {news.author}</h5>
 
 
+
                                 </Link>
                             </div>
                         
                         </div>
                     </div>  
 
+                ) :(
+                    <div key={news._id} className="card-divI">
+                        <div>
+                            <img src={IMG} alt={''} width="395" height="350" className="logo"/>
+                        </div> 
+                        <div className="card">
+                            <div>
+
+                                <h4 className="h3-newsL">{news.title}</h4>
+                                <h5 className="h3-newsL">Author: {news.author}</h5>
+                                <a href={news.link}>Link</a>
+
+                            </div>
+                        
+                        </div>
+                    </div>  
                 )
+            
             })}
+            
         </div>
     )
 }
