@@ -40,9 +40,9 @@ export default class Login extends Component {
 	render() {
 		return (
 			<>
-				<h2 className="h2-sign">Please fill in this form to create an account</h2>
+				<h2 className="h2-sign">Please fill in this form to Log in</h2>
 				<form onSubmit={this.handleSubmit}>
-					<div className="form-signup">
+					<div className="form-login">
 						<h3 className="h3-sign">Login with your Account</h3>
 						<label htmlFor="username">Username: </label>
 							<input className="controls"

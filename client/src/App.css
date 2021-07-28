@@ -13,6 +13,10 @@
   }
 }
 
+body{
+  background-color: rgb(168, 166, 110);
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -56,12 +60,24 @@
 }
 
 .form-signup{
-  width: 400px;
-  height: 300px;
-  background-color: rgb(115, 132, 152);
+  width: 600px;
+  height: 500px;
+  background-color: rgb(59, 119, 187);
   padding: 30px;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 70px;
+  border-radius: 4px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+.form-login{
+  width: 600px;
+  height: 500px;
+  background-color: rgb(57, 131, 96);
+  padding: 30px;
+  margin: auto;
+  margin-top: 70px;
   border-radius: 4px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: white;
@@ -70,10 +86,11 @@
 .form-signup label{
   font-weight: 600;
   font-size: 1.2em;
+  color: white;
 }
 
 .h2-sign{
-  margin-top: 70px;
+  margin-top: 50px;
 }
 .controls{
   width: 150px;
@@ -89,23 +106,24 @@
 }
 
 .but-signup{
-  width: 80px;
-  height: 40px;
-  background-color: rgb(128, 128, 238);
+  width: 100px;
+  height: 50px;
+  background-color: rgb(211, 214, 49);
   font-size: 20px;
-  margin-left: 70px;
-  margin-top: 20px;
+  margin-left: 20px;
+  margin-top: 50px;
   color: white;
+  font-weight: 600;
 
 }
 
 .add-news{
-  width: 500px;
-  height: 600px;
-  background-color: rgb(115, 132, 152);
+  width: 600px;
+  height: 700px;
+  background-color: rgb(100, 125, 153);
   padding: 30px;
   margin: 0;
-  margin-top: 50px;
+  margin-top: 90px;
   border-radius: 4px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: white;
@@ -117,20 +135,21 @@
 .but-addN{
   width: 130px;
   height: 40px;
-  background-color: rgb(128, 128, 238);
+  background-color: rgb(113, 113, 199);
   font-size: 16px;
-  margin-left: 20px;
-  margin-top: 20px;
+  margin-left: 10px;
+  margin-top: 30px;
   color: white;
 
 }
 
 .descrip-inp{
   width: 470px;
-  height: 370px;
+  height: 400px;
   text-align: center;
   font-size: 1.6em;
   font-weight: 600;
+  margin-top: 20px;
 
 }
 
@@ -143,14 +162,14 @@
   border: 1px solid #61dafb;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
-  margin-top: 5px;
+  margin-top: 20px;
 
 }
 
 .edit-news{
   width: 60%;
-  height: 400px;
-  background-color: rgb(205, 221, 210);
+  height: 600px;
+  background-color: rgb(101, 121, 107);
   padding: 30px;
   margin: auto;
   margin-top: 50px;
@@ -209,7 +228,7 @@
 }
 
 .button-delete {
-  background-color: rgb(176, 50, 50); 
+  background-color: rgb(194, 187, 161); 
   border: none;
   color: rgb(12, 8, 8);
   padding: 15px;
@@ -254,8 +273,8 @@
 
 
 .card-divI{
-  width: 300px;
-  height: 200px;
+  width: 400px;
+  height: 500px;
   display: inline-block;
   border: 1px solid black;
   margin-left: 50px;

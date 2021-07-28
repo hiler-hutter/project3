@@ -39,7 +39,7 @@ export default class AddNews extends Component{
     render(){
         return(
             <div className="add-news">
-                <h3>Willing to write a very interesting news</h3>
+                <h4>Write interesting news</h4>
                 <form onSubmit={this.handleSubmit}>
 
                     <label htmlFor="title"></label>
@@ -80,6 +80,7 @@ export default class AddNews extends Component{
                     onChange={this.handleChange}
 
                     /><br></br>
+	
 
                     <button type="submit" className="but-addN">Add this News</button>
 

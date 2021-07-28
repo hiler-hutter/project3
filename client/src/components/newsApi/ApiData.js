@@ -3,7 +3,7 @@ import Header from './Header';
 import Formulario from './Formulario';
 import ListadoNoticias from './ListadoNoticias';
 
-function ApiData() {
+function ApiData(props) {
 
   // definir la categoria y noticias
   const [categoria, guardarCategoria] = useState('');
@@ -32,7 +32,8 @@ function ApiData() {
               guardarCategoria={guardarCategoria}
             />
 
-            <ListadoNoticias 
+            <ListadoNoticias
+            user={props.user} 
               noticias={noticias}
             />
         </div>

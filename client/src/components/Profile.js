@@ -35,7 +35,7 @@ export default class Profile extends Component {
 		return (
 			<div className="all-news">
     
-                <NewList news={this.state.news} />
+                <NewList news={myNews} />
 				
             </div>
 		)
