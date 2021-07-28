@@ -71,17 +71,24 @@ export default class AddNews extends Component{
 
                     <label htmlFor="description"></label>
 
-                    <input className="descrip-inp"
+                    {/* <input className="descrip-inp"
 
                     type="text"
                     id="description"
                     name="description"
                     placeholder="News Content"
                     value={this.state.description}
+                    onChange={this.handleChange} */}
+                    <textarea className="descrip-inp"
+                     cols="40" 
+                     rows="10"
+                     type="text"
+                    id="description"
+                    name="description"
+                    placeholder="News Content"
+                    value={this.state.description}
                     onChange={this.handleChange}
-
-                    /><br></br>
-	
+                     ></textarea><br></br>
 
                     <button type="submit" className="but-addN">Add this News</button>
 

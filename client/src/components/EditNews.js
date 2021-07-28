@@ -37,14 +37,24 @@ export default class EditNews extends Component {
                 
                     <label htmlFor="description"></label>
                     <div id="contenedor">
-                    <input className="edit-inp"
+                   {/*  <input className="edit-inp"
                     contentEditable="true"
                     id="description"
                     type="text"
                     name="description"
                     value={this.props.description}
-                    onChange={this.props.handleChange}
-                    /></div><br></br>
+                    onChange={this.props.handleChange} */}
+                    <textarea className="edit-inp"
+                     cols="40" 
+                     rows="10"
+                     type="text"
+                    id="description"
+                    name="description"
+                    placeholder="News Content"
+                    value={this.props.description}
+                    onChange={this.props.handleChange}>
+                    </textarea>
+                    </div><br></br>
 
                    {/*  <div id="contenedor">
                         <div id="description"
