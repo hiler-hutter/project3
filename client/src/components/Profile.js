@@ -33,11 +33,15 @@ export default class Profile extends Component {
 		  console.log(myNews)
 		  console.log(this.props.user.username)
 		return (
+		<div>	
+				<div className="profile-user">Welcome to your Profile: "{this.props.user.username}"</div>
+
 			<div className="all-news">
-    
-                <NewList news={myNews} />
+                <NewList news={myNews}/>
+
 				
             </div>
+		</div>
 		)
 	}
 }

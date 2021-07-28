@@ -14,7 +14,8 @@
 }
 
 body{
-  background-color: rgb(168, 166, 110);
+  background-image: url(./images/back-news.jpg);
+
 }
 
 .App-header {
@@ -61,7 +62,7 @@ body{
 
 .form-signup{
   width: 600px;
-  height: 500px;
+  height: 600px;
   background-color: rgb(59, 119, 187);
   padding: 30px;
   margin: auto;
@@ -73,7 +74,7 @@ body{
 
 .form-login{
   width: 600px;
-  height: 500px;
+  height: 600px;
   background-color: rgb(57, 131, 96);
   padding: 30px;
   margin: auto;
@@ -85,12 +86,15 @@ body{
 
 .form-signup label{
   font-weight: 600;
-  font-size: 1.2em;
+  font-size: 1.4em;
   color: white;
 }
 
 .h2-sign{
   margin-top: 50px;
+  color: white;
+  font-weight: 600;
+
 }
 .controls{
   width: 150px;
@@ -108,10 +112,10 @@ body{
 .but-signup{
   width: 100px;
   height: 50px;
-  background-color: rgb(211, 214, 49);
+  background-color: rgb(76, 77, 65);
   font-size: 20px;
   margin-left: 20px;
-  margin-top: 50px;
+  margin-top: 100px;
   color: white;
   font-weight: 600;
 
@@ -120,7 +124,7 @@ body{
 .add-news{
   width: 600px;
   height: 700px;
-  background-color: rgb(100, 125, 153);
+  background-color: rgb(15, 20, 173);
   padding: 30px;
   margin: 0;
   margin-top: 90px;
@@ -130,6 +134,25 @@ body{
   float: left;
   margin-left: 15px;
 
+}
+
+.news-link{
+  font-size: 2.2em;
+}
+
+.title-news .h2-news{
+color: rgb(14, 12, 12);
+font-weight: 600;
+
+}
+
+.title-news{
+height: 120px;
+background-color: rgb(242, 252, 67);
+width: 60%;
+margin-left: 825px;
+margin-top: 25px;
+padding: 3px;
 }
 
 .but-addN{
@@ -150,6 +173,25 @@ body{
   font-size: 1.6em;
   font-weight: 600;
   margin-top: 20px;
+
+}
+
+.profile-user{
+  background-color: rgb(45, 231, 8); 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: 600;
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  top: 100px;
+  left: 150px;
+  border-radius: 50%;
+  padding-top: 50px;
 
 }
 
@@ -310,12 +352,27 @@ body{
   text-align: left;
 
 }
-.btn-block {
+/* .btn-block {
   width: 100%;
-}
+} */
 
 .nav-wrapper{
-  margin-top: 10px;
+  margin-top: 0px;
+}
+
+.button-saveNews{
+  height: 33px;
+  margin-left: 10px;
+  margin-top: 2px;
+  background-color: rgb(8, 50, 189);
+  color: white;
+  font-weight: 600;
+  font-size: 1.4em;
+
+}
+
+.input-field{
+font-size: 2em;
 }
 
 

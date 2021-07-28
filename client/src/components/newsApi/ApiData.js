@@ -11,7 +11,7 @@ function ApiData(props) {
 
   useEffect(() => {
     const consultarAPI = async () => {
-      const url = `https://newsapi.org/v2/top-headlines?country=mx&category=${categoria}&apiKey=dba1d148de644510a8e7d76678c94a34`;
+      const url = `https://newsapi.org/v2/top-headlines?country=us&category=${categoria}&apiKey=dba1d148de644510a8e7d76678c94a34`;
 
       const respuesta = await fetch(url);
       const noticias = await respuesta.json();
@@ -24,7 +24,7 @@ function ApiData(props) {
   return (
     <Fragment>
         <Header 
-          titulo='Buscador de Noticias'
+          titulo='Breaking News in USA'
         />
 
         <div className="container white">

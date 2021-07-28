@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
-import IMG from '../images/aidan-bartos.jpg'
+import IMG from '../images/news.jpg'
 
 //const logoImg = require.context('../../src/assets/img', true);
 
@@ -9,7 +9,7 @@ export default function NewList(props){
     return(
         <div>
 
-            {props.news.length > 0 && <h2>These are all the saved News:</h2>}
+            {props.news.length > 0 && <div className="title-news"><h2 className="h2-news">Saved and Created News</h2></div>}
 
             {props.news.map(news => {
                 return  news.link === 'N/A' ? (
@@ -42,7 +42,7 @@ export default function NewList(props){
 
                                 <h4 className="h3-newsL">{news.title}</h4>
                                 <h5 className="h3-newsL">Author: {news.author}</h5>
-                                <a href={news.link}>Link</a>
+                                <a href={news.link} className="news-link">Link</a>
 
                             </div>
                         
