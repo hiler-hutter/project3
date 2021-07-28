@@ -15,6 +15,7 @@
 
 body{
   background-image: url(./images/back-news.jpg);
+  opacity: 0.9;
 
 }
 
@@ -186,12 +187,12 @@ padding: 3px;
   font-size: 2em;
   font-weight: 600;
   width: 400px;
-  height: 200px;
+  height: 150px;
   position: absolute;
   top: 100px;
   left: 150px;
-  border-radius: 50%;
-  padding-top: 50px;
+  border-radius: 40%;
+  padding-top: 30px;
 
 }
 
