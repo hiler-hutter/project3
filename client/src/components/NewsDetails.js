@@ -116,7 +116,7 @@ export default class NewsDetails extends Component {
         if (this.state.error) return <h2>{this.state.error}</h2>
         if(!this.state.news) return <></>
 
-		return (
+		return this.state.news.author === this.props.user.username ? (
 
 		
             <div>
@@ -140,6 +140,20 @@ export default class NewsDetails extends Component {
 						handleChange={this.handleChange}
 					/>
 				)}
+            
+                
+            </div>
+		) : (
+
+		
+            <div>
+                <div className="details-news">
+                
+                    <h2>Title: {this.state.news.title}</h2>  
+                    <h2>Author: {this.state.news.author}</h2>  
+                    <h2>Description: {this.state.news.description}</h2>
+
+                </div> 
             
                 
             </div>

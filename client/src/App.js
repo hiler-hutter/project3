@@ -51,7 +51,7 @@ class App extends React.Component {
   
         <Route 
         exact path='/news/:id'
-        component={NewsDetails}
+        render={props => <NewsDetails user={this.state.user} setUser={this.setUser} {...props} />}
         />
 
         <Route 
