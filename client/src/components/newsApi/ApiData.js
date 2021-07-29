@@ -20,6 +20,8 @@ function ApiData(props) {
     }
     consultarAPI();
   }, [categoria]);
+  
+  if(noticias.length === 0) return<></>
 
   return (
     <Fragment>
