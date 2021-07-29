@@ -9,7 +9,7 @@ export default class Profile extends Component {
 	}
 
 	getData = () => {
-		axios.get('http://localhost:5005/api/news')
+		axios.get('/api/news')
 			.then(response => {
 				console.log(response);
                 this.setState({
