@@ -6,6 +6,8 @@ export default class Signup extends Component {
 	state = {
 		username: '',
 		password: '',
+		country: '',
+		city: '',
 		message: ''
 	}
 
@@ -18,14 +20,15 @@ export default class Signup extends Component {
 
 	handleSubmit = e => {
 		e.preventDefault();
-		const { username, password } = this.state;
-		signup(username, password)
+		const { username, password, country, city } = this.state;
+		signup(username, password, country, city)
 			.then(response => {
 				if (response.message) {
 					this.setState({
 						message: response.message,
 						username: '',
 						password: ''
+						
 					})
 				} else {
 					// user is correctly signed up in the backend

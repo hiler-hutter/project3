@@ -129,6 +129,7 @@ export default class NewsDetails extends Component {
                 </div> 
                
                 <button onClick={this.deleteNews} className="button-delete">Delete this News</button><br></br>  
+
                 <button onClick={this.toggleEditForm} className="button-edit">Show Edit form</button>
                 {this.state.editForm && (
 					<EditNews
@@ -139,7 +140,7 @@ export default class NewsDetails extends Component {
 						handleChange={this.handleChange}
 					/>
 				)}
-
+            
                 
             </div>
 		)

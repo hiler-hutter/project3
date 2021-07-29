@@ -3,7 +3,7 @@ import axios from 'axios';
 import NewList from './NewList';
 import AddNews from './AddNews'
 
-export default class Projects extends Component {
+export default class News extends Component {
 
 	state = {
 		news: []
