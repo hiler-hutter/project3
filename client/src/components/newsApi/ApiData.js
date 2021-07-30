@@ -2,6 +2,7 @@ import React, { Fragment, useState, useEffect } from 'react';
 import Header from './Header';
 import Formulario from './Formulario';
 import ListadoNoticias from './ListadoNoticias';
+import axios from 'axios';
 
 function ApiData(props) {
 
@@ -10,7 +11,7 @@ function ApiData(props) {
   const [noticias, guardarNoticias] = useState([]);
 
   useEffect(() => {
-    const consultarAPI = async () => {
+   /*  const consultarAPI = async () => {
       const url = `https://newsapi.org/v2/top-headlines?country=us&category=${categoria}&apiKey=dba1d148de644510a8e7d76678c94a34`;
 
       const respuesta = await fetch(url);
@@ -18,7 +19,14 @@ function ApiData(props) {
 
       guardarNoticias(noticias.articles);
     }
-    consultarAPI();
+    consultarAPI(); */
+    axios.get(`/api/news/${categoria}`)
+    .then(response => {
+      console.log(response.data)
+      guardarNoticias(response.data);
+    }).catch(error => {
+      console.log(error)
+    })
   }, [categoria]);
 
   return (

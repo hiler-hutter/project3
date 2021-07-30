@@ -9,7 +9,7 @@ export default function NewList(props){
     return(
         <div>
 
-            {props.news.length > 0 && <div className="title-news"><h2 className="h2-news">Saved and Created News</h2></div>}
+            {props.news.length > 0 && <div className="title-news"><h3 className="h2-news">Saved and Created News and ProtoTypes</h3></div>}
 
             {props.news.map(news => {
                 return  news.link === 'N/A' ? (
