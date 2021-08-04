@@ -1,6 +1,7 @@
 const New = require("../models/New");
 const router = require("express").Router();
 const axios = require("axios")
+
 router.get('/', (req, res, next) => {
   New.find()
     .then(news => {
@@ -12,7 +13,7 @@ router.get('/', (req, res, next) => {
 });
 
 //calling an api news routes
-router.get('/news/:category', (req, res, next) => {
+router.get('/news/:categoria', (req, res, next) => {
   /* New.find()
     .then(news => {
       res.status(200).json(news);
@@ -20,7 +21,7 @@ router.get('/news/:category', (req, res, next) => {
     .catch(err => {
       next(err)
     }) */
-    const categoria = req.params.category
+   const categoria = req.params.category
     axios.get(`https://newsapi.org/v2/top-headlines?country=us&category=${categoria}&apiKey=dba1d148de644510a8e7d76678c94a34`)
     .then(response => {
       return response.data
@@ -29,7 +30,7 @@ router.get('/news/:category', (req, res, next) => {
       return err.response.data
     })
 
-});
+}); 
 
 
 router.get('/:id', (req, res, next) => {

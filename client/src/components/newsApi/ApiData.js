@@ -11,15 +11,15 @@ function ApiData(props) {
   const [noticias, guardarNoticias] = useState([]);
 
   useEffect(() => {
-   /*  const consultarAPI = async () => {
+     /*const consultarAPI = async () => {
       const url = `https://newsapi.org/v2/top-headlines?country=us&category=${categoria}&apiKey=dba1d148de644510a8e7d76678c94a34`;
 
       const respuesta = await fetch(url);
-      const noticias = await respuesta.json();
+      const noticias = await respuesta.json(); */
 
-      guardarNoticias(noticias.articles);
+      /* guardarNoticias(noticias.articles);
     }
-    consultarAPI(); */
+    consultarAPI();  */
     axios.get(`/api/news/${categoria}`)
     .then(response => {
       console.log(response.data)
